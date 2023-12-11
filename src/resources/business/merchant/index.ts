@@ -10,8 +10,8 @@ export class Merchant {
   transfer: Transfer;
   
   prepareConfig(config: TConfigBusiness) {
-    if (typeof config.hash === "undefined")
-      config.hash = EAuthenticationMerchantAlgorithm.SHA_512;
+    if (typeof config.hashingAlgorithm === "undefined")
+      config.hashingAlgorithm = EAuthenticationMerchantAlgorithm.SHA_512;
 
     return config;
   }
