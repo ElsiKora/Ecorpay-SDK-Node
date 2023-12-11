@@ -24,6 +24,7 @@ export abstract class Base {
         if (this.jwt) {
           config.headers['Authorization'] = `Bearer ${this.jwt}`;
         }
+        
         if (EApiRequestHeaders.HASH in config.headers && config.baseURL) {
           const apiToSign = {
             key: config.headers[EApiRequestHeaders.KEY],

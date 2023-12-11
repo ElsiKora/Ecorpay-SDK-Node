@@ -36,8 +36,6 @@ export const signHeaders = (
   } else dataToSign = `${timestamp}/v1/${requestUrl}${JSON.stringify(data)}`;
 
 
-  console.log("dataToSign", dataToSign);
-
   // Decode the data to sign
   dataToSign = decodeURIComponent(dataToSign);
   // Generate the signature based on the authentication algorithm

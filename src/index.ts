@@ -10,8 +10,8 @@ export function isConfigBusiness(config: any): config is TConfigBusiness {
   return (
     'key' in config &&
     typeof config.key === 'string' &&
-    'hash' in config &&
-    typeof config.hash === 'string' &&
+    'hashingAlgorithm' in config &&
+    typeof config.hashingAlgorithm === 'string' &&
     'secret' in config &&
     typeof config.secret === 'string'
   );
