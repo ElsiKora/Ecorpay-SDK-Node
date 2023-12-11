@@ -1,4 +1,4 @@
-import { User as AuthType } from '@elsikora/types-ecorpay'
+import { User as AuthType } from '@elsikora/ecorpay-types'
 import { EUserUrls } from './urls';
 import { Base } from '../base';
 

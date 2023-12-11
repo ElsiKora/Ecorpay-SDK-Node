@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { TConfigWallet, API_BASE_URL_PROD, TConfigBusiness } from '../shared/config';
-import { TErrorResponse } from '@elsikora/types-ecorpay';
+import { TErrorResponse } from '@elsikora/ecorpay-types';
 import { EApiRequestHeaders, signHeaders } from '../shared/signHeaders';
 import { isConfigBusiness } from '..';
 
@@ -30,9 +30,10 @@ export abstract class Base {
             secret: config.headers[EApiRequestHeaders.SECRET],
             hash: config.headers[EApiRequestHeaders.HASH],
           };
+
           const signHeader = signHeaders(
             config.url,
-            {},
+            config.data || {},
             config.params,
             apiToSign.hash,
             apiToSign.secret,
@@ -55,7 +56,7 @@ export abstract class Base {
     return {
       'X-Api-Key': this.config.key,
       'X-Api-Secret': this.config.secret,
-      'X-Api-Hash': this.config.hash
+      'X-Api-Hash': this.config.hashingAlgorithm
     };
   }
   public setJwt(jwt: string): void {

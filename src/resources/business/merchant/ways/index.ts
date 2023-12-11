@@ -1,5 +1,5 @@
 import { Base } from '../../../base';
-import { IPaginationList, Merchant, User } from '@elsikora/types-ecorpay';
+import { IPaginationList, Merchant, User } from '@elsikora/ecorpay-types';
 import { EWaysUrls } from './urls';
 /**
  * Ways service class for interacting with merchant way-related endpoints.

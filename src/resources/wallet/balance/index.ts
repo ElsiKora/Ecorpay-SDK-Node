@@ -1,5 +1,5 @@
 import { Base } from '../../base';
-import { IPaginationList, User } from '@elsikora/types-ecorpay';
+import { IPaginationList, User } from '@elsikora/ecorpay-types';
 import { EBalanceUrls } from './urls';
 export class Balance extends Base {
  async getBalanceList({ limit, page }: IPaginationList): Promise<User.Balance.TResponsePagination> {

@@ -8,7 +8,7 @@ export type TConfigWallet = {
 
 export type TConfigBusiness = {
   key: string;
-  hash?: EAuthenticationMerchantAlgorithm | string;
+  hashingAlgorithm?: EAuthenticationMerchantAlgorithm | string;
   secret: string;
   jwt?: string | undefined;
 };

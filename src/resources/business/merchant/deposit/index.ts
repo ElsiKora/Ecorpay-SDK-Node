@@ -1,5 +1,5 @@
 import { Base } from "../../../base";
-import { Merchant } from "@elsikora/types-ecorpay";
+import { Merchant } from "@elsikora/ecorpay-types";
 import { EDepositUrls } from "./urls";
 export class Deposit extends Base {
   /**
