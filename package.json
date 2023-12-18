@@ -26,7 +26,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@elsikora/ecorpay-types": "^1.0.1",
+    "@elsikora/ecorpay-types": "^1.0.7",
     "@types/node": "^20.10.4"
   }
 }
