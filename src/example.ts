@@ -1,4 +1,4 @@
-import { Business  } from './index';
+import { Business, Wallet  } from './index';
 
 
 const ecorpayClient = new Business({  key: "",  secret: "", hashingAlgorithm: "SHA256" });
