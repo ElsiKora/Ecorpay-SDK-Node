@@ -1,3 +1,5 @@
 export enum EDepositUrls {
-  DEPOSIT = "merchant/deposit",
+  DEPOSIT_CREATE = "merchant/deposit",
+  DEPOSIT_LIST = "merchant/deposit/list",
+  DEPOSIT = "merchant/deposit/:id",
 }

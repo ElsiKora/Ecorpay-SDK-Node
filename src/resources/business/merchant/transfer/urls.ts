@@ -1,4 +1,6 @@
 
 export enum ETransferUrls {
-  TRANSFER = "merchant/transfer",
+  TRANSFER_CREATE = "merchant/transfer",
+  TRANSFER_LIST = "merchant/transfer/list",
+  TRANSFER = "merchant/transfer/:id",
 }
